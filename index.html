@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pay Oshan Paul</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #ffffff;
+            color: #000000;
+            font-family: Arial, Helvetica, sans-serif;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 360px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            font-size: 32px;
+            font-weight: 600;
+            letter-spacing: -1px;
+        }
+
+        .upi {
+            margin-bottom: 32px;
+            font-size: 14px;
+            color: #555555;
+        }
+
+        .pay {
+            display: block;
+            width: 100%;
+            padding: 16px 20px;
+
+            background: #000000;
+            color: #ffffff;
+
+            border: 2px solid #000000;
+            border-radius: 10px;
+
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+
+            transition: 0.15s;
+        }
+
+        .pay:active {
+            background: #ffffff;
+            color: #000000;
+        }
+
+        .footer {
+            margin-top: 22px;
+            font-size: 12px;
+            color: #888888;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Oshan Paul</h1>
+
+        <div class="upi">
+            oshanpaul@slc
+        </div>
+
+        <a
+            class="pay"
+            href="upi://pay?pa=oshanpaul%40slc&pn=Oshan%20Paul&cu=INR"
+        >
+            Pay with UPI
+        </a>
+
+        <div class="footer">
+            Enter amount in your UPI app
+        </div>
+
+    </div>
+
+</body>
+</html>
