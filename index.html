@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Pay Oshan Paul</title>
+    <title>Pay Oshan</title>
 
     <style>
         * {
@@ -14,87 +14,76 @@
         body {
             margin: 0;
             min-height: 100vh;
-            background: #ffffff;
-            color: #000000;
-            font-family: Arial, Helvetica, sans-serif;
-
             display: flex;
             align-items: center;
             justify-content: center;
+            background: #f5f5f5;
+            font-family: Arial, sans-serif;
         }
 
-        .container {
+        .card {
             width: 90%;
-            max-width: 360px;
+            max-width: 400px;
+            background: white;
+            padding: 35px 25px;
+            border-radius: 20px;
             text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.10);
         }
 
         h1 {
-            margin: 0 0 10px;
-            font-size: 32px;
-            font-weight: 600;
-            letter-spacing: -1px;
+            margin-bottom: 8px;
         }
 
         .upi {
-            margin-bottom: 32px;
-            font-size: 14px;
-            color: #555555;
+            color: #666;
+            margin-bottom: 30px;
         }
 
-        .pay {
+        .pay-button {
             display: block;
             width: 100%;
-            padding: 16px 20px;
-
-            background: #000000;
-            color: #ffffff;
-
-            border: 2px solid #000000;
-            border-radius: 10px;
-
-            font-size: 16px;
-            font-weight: 600;
+            padding: 17px;
+            border: none;
+            border-radius: 12px;
+            background: #111;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
             text-decoration: none;
-
-            transition: 0.15s;
         }
 
-        .pay:active {
-            background: #ffffff;
-            color: #000000;
-        }
-
-        .footer {
-            margin-top: 22px;
-            font-size: 12px;
-            color: #888888;
+        .note {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #777;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+<div class="card">
 
-        <h1>Oshan Paul</h1>
+    <h1>Pay Oshan</h1>
 
-        <div class="upi">
-            oshanpaul@slc
-        </div>
-
-        <a
-            class="pay"
-            href="upi://pay?pa=oshanpaul%40slc&pn=Oshan%20Paul&cu=INR"
-        >
-            Pay with UPI
-        </a>
-
-        <div class="footer">
-            Enter amount in your UPI app
-        </div>
-
+    <div class="upi">
+        UPI: oshanpaul@slc
     </div>
+
+    <a
+        class="pay-button"
+        href="upi://pay?pa=oshanpaul%40slc&pn=Oshan&cu=INR"
+    >
+        Pay with UPI
+    </a>
+
+    <div class="note">
+        Select your preferred UPI app and enter the amount.
+    </div>
+
+</div>
 
 </body>
 </html>
